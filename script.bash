@@ -1,0 +1,17 @@
+/learning-site
+    /public
+        index.html
+        /css
+            style.css
+    /src
+        app.js
+    /views
+        home.html
+        course.html
+        elementary.html
+        elementary-math.html
+    /routes
+        index.js
+        courses.js
+    /models
+        user.js
