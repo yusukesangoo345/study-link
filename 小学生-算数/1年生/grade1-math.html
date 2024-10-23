@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>スタディリンク - 1年生 算数コース</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>スタディリンク - 1年生向け 算数</h1>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/courses/elementary/grade1">戻る</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>足し算問題</h2>
+            <p>次の問題に答えてください:</p>
+            <form id="math-form">
+                <!-- 問題1: テキスト入力 -->
+                <label for="q1">2 + 3 = </label>
+                <input type="text" id="q1" name="q1" required>
+                <span id="result-q1"></span><br>
+
+                <!-- 問題2: テキスト入力 -->
+                <label for="q2">4 + 1 = </label>
+                <input type="text" id="q2" name="q2" required>
+                <span id="result-q2"></span><br>
+
+                <!-- 問題3: テキスト入力 -->
+                <label for="q3">5 + 2 = </label>
+                <input type="text" id="q3" name="q3" required>
+                <span id="result-q3"></span><br>
+
+                <!-- 問題4: テキスト入力 -->
+                <label for="q4">3 + 4 = </label>
+                <input type="text" id="q4" name="q4" required>
+                <span id="result-q4"></span><br>
+
+                <!-- 問題5: テキスト入力 -->
+                <label for="q5">6 + 1 = </label>
+                <input type="text" id="q5" name="q5" required>
+                <span id="result-q5"></span><br>
+
+                <button type="button" onclick="checkAnswers()">回答する</button>
+                <button type="button" id="next-button" style="display:none;" onclick="nextPage()">次のページへ</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p><a href="/admin-info">管理人情報</a> | &copy; 2024 スタディリンク</p>
+    </footer>
+
+    <script src="/js/math.js"></script>
+</body>
+</html>
