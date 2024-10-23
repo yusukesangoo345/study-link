@@ -1,0 +1,123 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+nav ul {
+    list-style-type: none;
+}
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+.sns_button{
+    margin: 0;
+    padding: 0; 
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: flex;
+    justify-content: center;
+  }
+  .sns_button li{
+    list-style: none;
+    margin: 0 5px 0 0;
+  }
+  .sns_button li a{
+    text-decoration: none;
+    display: inline-block;
+    background: #333;
+    border-radius: 25px;
+  }
+  .sns_button li a i{
+    display: inline-block;
+    width: 50px;
+    height: 50px; 
+    color: #fff;
+    font-size: 30px;
+    display: -webkit-flex;
+      display: -moz-flex;
+      display: flex;
+    justify-content: center;
+    align-items: center;  
+  }
+  .sns_button li:nth-child(1) a{ background: #66ccff; }
+  .sns_button li:nth-child(2) a{ background: #3366cc; }
+  .sns_button li:nth-child(3) a{ background: #33cc33; }
+  .sns_button li:nth-child(4) a{ background: #ff0000; }
+  .sns_button li:nth-child(5) a{ background: #ff9900; }
+  
+  body{
+      vertical-align:middle; 
+      padding: 50px 0;
+      text-align: center;
+  }
+  .button a {
+    position: relative;
+    overflow: hidden;
+    border-radius: 3px;
+    text-decoration: none;
+    display: block;
+    max-width: 250px;
+    background: #333;
+    margin: auto;
+    padding: 10px 30px;
+    font-family: "Noto Sans Japanese";
+    text-align: center;
+    line-height: 1.8;
+    text-decoration: none;
+    font-weight: 500;
+    outline: none;
+    color: #fff;
+    transition: ease .2s;
+}
+.button a::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -75%;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,.3) 100%);
+  transform: skewX(-25deg);
+}
+
+.button a:hover::before {
+  animation: shine 0.7s;
+}
+
+@keyframes shine {
+  100% {
+    left: 125%;
+  }
+}
+
+body{
+    vertical-align:middle; 
+    padding: 50px 0;
+    text-align: center;
+}
+h2 {
+    padding: 1rem 2rem;
+    border-left: 5px solid #000;
+    background: #f4f4f4;
+  }
